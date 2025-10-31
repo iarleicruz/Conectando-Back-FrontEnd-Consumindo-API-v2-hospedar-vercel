@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(180deg, #363467 0%, rgba(30, 29, 79, 0.8) 100%);
+  width: 100vw;
+  min-height: 100vh;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
