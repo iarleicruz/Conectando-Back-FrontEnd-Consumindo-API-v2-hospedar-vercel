@@ -2,8 +2,8 @@
     "version": 2,
     "builds": [
         {
-            "src":"backend/server.cjs"
-           
+            "src":"backend/server.cjs",
+            "use":"@vercel/node"
         }
     ],
   "routes": [
