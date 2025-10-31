@@ -1,7 +1,7 @@
 const express = require ('express')
 const cors = require ('cors')
 const path = require('path')
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3000
 // import { PrismaClient } from "@prisma/client"
 //import { PrismaClient } from './generated/prisma/index.js'
 //   import { PrismaClient } from './generated/prisma'
@@ -19,6 +19,7 @@ app.get('*', (req, res) => {
 const prisma = new PrismaClient()
 const app = express()
 app.use(express.json())
+
 app.use(cors())
 // const users = []
 

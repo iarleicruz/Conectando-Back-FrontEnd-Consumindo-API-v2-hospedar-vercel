@@ -3,12 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
+  "proxy": "http://localhost:3000",
   "scripts": {
     "start-react": "vite",
     "start-server": "node ./backend/server.cjs",
     "dev": "concurrently \"npm run start-server\" \"npm run start-react\"",
-    "build": "vite build",
+    "vercel-build": "npx prisma migrate deploy",
     "lint": "eslint .",
     "preview": "vite preview"
   },
