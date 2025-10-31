@@ -6,7 +6,7 @@
 
   "scripts": {
     "start-react": "vite",
-    "start-server": "pm2 start ./backend/server.cjs",
+    "start-server": "node ./backend/server.cjs",
     "dev": "concurrently \"npm run start-server\" \"npm run start-react\"",
     "build": "vite build",
     "lint": "eslint .",
